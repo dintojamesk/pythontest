@@ -1,0 +1,18 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: main.app
+- url: /.*
+  script: main.app
+  login: required
+- url: /.*
+  script: Background.jpg
+- url: /images
+  static_dir: static/images
+
+libraries:
+- name: flask
+  version: 0.12

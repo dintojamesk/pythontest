@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <style>
+body {
+  background-image: url('https://www.shoutmeloud.com/wp-content/uploads/2012/04/Social-Media-for-businesses.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 30% 50%;
+  
+}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>Social Media</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+    
+</head>
+  <body style="background-color:white">
+
+    <header>
+      <div class="container">
+        <h1 class="logo"><font face ="Times New Roman" size="+6" color="black"><center> Click To Access Your Account</center></font></h1>
+        <strong><nav>
+          <ul class="menu">
+            <a href="https://www.linkedin.com/feed/"><font size="+10" color="white"><center><img src="https://ox-prod.imgix.net/uploads/2017/04/linkedin_logo.jpg?auto=compress" width="200" height=120"></center></font></a>
+            <a href="https://www.facebook.com/"><font size="+10" color="white"><center><img src="https://www.santaferealestatedowntown.com/wp-content/uploads/2018/09/Facebook-white-background.jpg" width="210" height="100"></center></font></a>
+			<a href="https://www.instagram.com/"><font size="+10" color="white"><center><img src="https://thumbs.dreamstime.com/b/instagram-141049465.jpg" width="300" height ="100" ></center></font></a>
+			<p><center><span id="datetime"></center></span></p>
+			<script>
+			var dt = new Date();
+			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+			</script>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+   
+
+ </body>
+</html>
+
